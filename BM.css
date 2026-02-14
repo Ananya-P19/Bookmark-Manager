@@ -1,0 +1,88 @@
+
+/*.Tabs__tabs____Gn2T {
+    align-items: center;
+    display: inline-flex;
+    flex-direction: row;
+    gap: .75rem;
+    height: 2.5rem;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    white-space: nowrap;
+    -ms-overflow-style: none;
+}
+@media (min-width: 30rem) {
+    .Tabs__tabs____Gn2T {
+        gap: 1.5rem;
+    }
+    .AuthenticationPopup__authPopup___xjsZh {
+        gap: 1.5rem;
+        padding: 1rem;
+    }
+}
+.AuthenticationPopup__hasPaddingTop___kT0KJ {
+    padding-top: 3rem;
+}
+.PopinBasic__content___rtAJh {
+    background-color: #fff;
+    border-radius: .1875rem;
+    margin: 0 auto;
+    max-height: 100%;
+    overflow: auto;
+    position: relative;
+    --webkit-overflow-scrolling: touch;
+} */
+/* 1. Global Box Sizing */
+html {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased; /* Makes fonts look smoother */
+}
+
+*, *:before, *:after {
+    box-sizing: inherit; /* Ensures padding doesn't break element width */
+}
+
+/* 2. Document Base */
+html {
+    color: #0d0d0d;
+    font-family: ABCFavorit, Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+/* 3. Centering Layout */
+body {
+    background-color: #fff;
+    font-weight: 400;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    min-height: 100vh;       
+    margin: 0;       
+    font-family: Arial, sans-serif;        
+}
+.signup-link {
+    margin-top: 10px;
+    font-size: 14px;
+}
+.login-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    gap: 20px;              
+    text-align: center;
+}
+.login-card {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 20px;
+}
+h1 {
+    margin-bottom: 0; 
+    font-size: 2rem; 
+    font-size: 32px;
+}
+p { 
+    margin: 0 0 10px 0; 
+    color: #0e0000; }
