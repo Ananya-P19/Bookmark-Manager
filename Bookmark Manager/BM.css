@@ -1,0 +1,143 @@
+/* 1. Global Box Sizing */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    height: 100%;
+    -webkit-font-smoothing: antialiased; /* Makes fonts look smoother */
+    overflow-x: hidden;
+}
+
+/* 2. Centering Layout */
+body {
+    background-color: #fff; /* #f8f9fa; */
+    /* color: #202124; */
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    min-height: 100vh;            
+    font-family: Arial, sans-serif;        
+}
+/* 3. Login Card Styling */
+.login-card {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    max-width: 400px;
+}
+.signup-link {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #5f6368;
+}
+.signup-link a {
+    color: #4285f4;
+    text-decoration: none;
+    font-weight: bold;
+}
+h1 {
+    margin-bottom: 8px;  
+    font-size: 32px;
+    font-family: Arial, sans-serif;
+}
+p { 
+    margin: 0 0 20px 0; 
+    color: #5f6368; 
+    font-family: Arial, sans-serif;
+    text-align: center;
+    width: 100%;
+}
+.text-gray-500 {
+    color: #5f6368;
+    margin-bottom: 20px;
+}
+/* 4.Dashboard Styling */
+.dashboard-container {
+    display: block;
+    width: 90%;
+    max-width: 800px;
+    background: white;
+    margin: 20px auto;
+    text-align: center;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08)
+}
+
+.input-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 25px 0;
+}
+
+.input-form input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    outline: none;
+}
+
+#addBtn {
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    padding: 0 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+}
+/* 5. Bookmarks Grid */
+.bookmarks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.bookmark-item {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    border-left: 6px solid #4285f4;
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+    /* text-align: left; */
+}
+.bookmark-item strong {
+    font-size: 18px;
+}
+.bookmark-item a {
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* The Close Button (X) */
+.close-btn {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+/* Delete Button */
+.delete-btn {
+    background: none;
+    border: none;
+    color: #d93025; /* Google Red */
+    cursor: pointer;
+    font-size: 12px;
+    align-self: flex-end;
+    margin-top: auto;
+}

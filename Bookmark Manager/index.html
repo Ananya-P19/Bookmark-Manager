@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="BM.css">
+    <script src="Bookmark Manager.js"></script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+    <div id="login-container" class="login-card">
+        <div class="header-text">
+            <h1>Welcome</h1>
+            <p>Sign in to your account</p>
+        </div>
+    
+    
+        <div id="g_id_onload"
+            data-client_id="YOUR_GOOGLE_CLIENT_ID.apps.googleusercontent.com"
+            data-context="signin"
+            data-ux_mode="popup"
+            data-callback="handleCredentialResponse"
+            data-auto_prompt="false">
+        </div>
+
+        <div class="g_id_signin"
+            data-type="standard"
+            data-shape="pill"
+            data-theme="outline"
+            data-text="signin_with"
+            data-size="large"
+            data-logo_alignment="left"
+            data-width="350">
+        </div>
+
+        <div class="signup-link">
+            <span>Don't have an account?</span>
+            <a href="#">Sign up</a>
+        </div>
+    </div>
+    
+    <div id="dashboard" class="dashboard-container" style="display: none;">
+        <div style="text-align: right;">
+            <button id="signOutBtn">Sign Out</button>
+        </div>
+
+        <h2>My Bookmarks</h2>
+    
+        <div class="input-form">
+            <input type="text" id="siteTitle" placeholder="Website Title">
+            <input type="url" id="siteUrl" placeholder="Website URL (https://...)">
+            <button id="addBtn">Add Bookmark</button>
+        </div>
+
+        <div id="bookmarksList" class="bookmarks-grid"></div>
+    </div>
+    <script src="Bookmark Manager.js"></script>
+</body>
+</html>
